@@ -1,3 +1,15 @@
+# Instructions On How To Run The Project Locally
+- Install NodeJS 
+- Install MySql 
+- Install Postman
+- Clone the repository 
+- Run npm install 
+- Open Postman in Authorization tab select Basic Auth then enter below credentials:[
+ username:admin  , password:password
+]
+- Start testing using Postman :
+
+# API Documentation
 This API allows you to manage a collection of books. You can add, retrieve, update, and delete books from a MySQL database.
 
 ## Authentication
@@ -15,7 +27,6 @@ Basic authentication is required for modifying (adding, updating, deleting) book
 - **Endpoint**: `/api/books`
 - **Authentication**: Required
 - **Request Body**:
-  ```json
   {
     "title": "The Great Gatsby",
     "author": "F. Scott Fitzgerald",
@@ -33,7 +44,7 @@ Basic authentication is required for modifying (adding, updating, deleting) book
   500:{
   "error": "An error occurred while saving the book."
   }
-  ```
+  
 
 ### 2. Retrieve All Books
 
@@ -68,7 +79,7 @@ Basic authentication is required for modifying (adding, updating, deleting) book
   "error": "Book not found."
   }
 
-### 3. Update a Specific Book
+### 4. Update a Specific Book
 
 - **Method**: `PUT`
 - **Endpoint**: `/api/books/:id`
