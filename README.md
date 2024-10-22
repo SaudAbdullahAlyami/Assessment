@@ -4,6 +4,7 @@
 - Install Postman
 - Clone the repository 
 - Run npm install 
+- Update your database credentials in db.js
 - Open Postman in Authorization tab select Basic Auth then enter below credentials:[
  username:admin  , password:password
 ]
